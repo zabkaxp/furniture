@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Lora', serif;
+    width:100vw;
+}
+
+.wrapper{
+    background-image: url("img/living-room.png");
+    height:100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: grayscale(50%);
+ 
+}
+
+.wrapper--logo img{
+    z-index: 10;
+    width:110px;
+    height:110px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    filter: grayscale(0%);
+}
+
+.nav-list{
+    display:flex;
+    justify-content: flex-end;
+    padding:20px;
+}
+
+.nav-list li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    color:white;
+    margin:25px;
+       filter:drop-shadow(3px 3px 1px #000);
+}
+
+.nav-list li:hover{
+    color:#bbe5b3;
+    cursor:pointer;
+}
+
+.wrapper-title{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top:150px;
+    
+}
+
+.title-big{
+    font-size: 90px;
+    font-weight:900px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    filter:drop-shadow(7px 7px 6px #000);
+    
+}
+.title-small{
+    font-size:30px;
+    letter-spacing: 4px;
+    margin-top:20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    filter:drop-shadow(7px 7px 6px #000);
+}
+
+.about-us{
+    display: flex;
+}
+
+.about-us--col-1{
+    width:50%;
+    margin:10px 90px;
+    
+}
+
+.about-us--col-2{
+    width:50%;
+    align-items: center;
+}
+
+.what-we-do{
+    font-size:30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    letter-spacing: 3px;
+
+}
+
+.what-we-do--text{
+    line-height:30px;
+    font-size:20px;
+    color:#5a6362;
+}
+
+.what-we-do-img{
+    width:400px;
+    display: block;
+    margin:30px;
+}
+
