@@ -54,11 +54,12 @@ body{
 
 .wrapper{
     background-image: url("img/living-room.png");
+    position: fixed;
     height:100vh;
     background-repeat: no-repeat;
     position: relative;
-    filter: grayscale(50%);
- 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .wrapper--logo img{
@@ -78,6 +79,7 @@ body{
 }
 
 .nav-list li{
+
     list-style-type: none;
     text-transform: uppercase;
     font-size: 20px;
@@ -85,6 +87,10 @@ body{
     color:white;
     margin:25px;
        filter:drop-shadow(3px 3px 1px #000);
+}
+
+.nav-list a{
+        text-decoration: none;
 }
 
 .nav-list li:hover{
@@ -112,7 +118,7 @@ body{
     font-size:30px;
     letter-spacing: 4px;
     margin-top:20px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     filter:drop-shadow(7px 7px 6px #000);
 }
 
@@ -122,8 +128,7 @@ body{
 
 .about-us--col-1{
     width:50%;
-    margin:10px 90px;
-    
+    margin:10px 90px;  
 }
 
 .about-us--col-2{
@@ -131,13 +136,12 @@ body{
     align-items: center;
 }
 
-.what-we-do{
+.description{
     font-size:30px;
     font-weight: 400;
+    letter-spacing: 3px;
     margin-bottom: 30px;
     margin-top: 60px;
-    letter-spacing: 3px;
-
 }
 
 .what-we-do--text{
@@ -152,3 +156,126 @@ body{
     margin:30px;
 }
 
+.background--1{
+    background-image: url("img/fixed.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:80vh;
+}
+
+.our-partners{
+    height:100vh;
+     margin:10px 90px;
+}
+
+.logos-img{
+    width:1000px;
+}
+
+.background--2{
+    background-image: url("img/fixed1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:80vh;
+}
+
+.awards{
+    height:70vh;
+    margin:10px 90px;
+}
+
+.awards-columns{
+    display: flex;
+}
+
+.award-box{
+    display:flex;
+    margin:15px;
+}
+
+.circle-box{
+    width:100px;
+    height:100px;
+}
+.circle{
+    margin-top:30px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(206, 177, 74), rgb(245, 249, 194));
+    width:100px;
+    height:100px;
+    border:1px solid silver;
+    font-weight: 700;
+    text-align: center;
+    transition: all 1s;
+}
+.circle:hover{
+    transform: scale(1.1);
+    background: linear-gradient(rgb(245, 249, 194), rgb(206, 177, 74));
+}
+
+.award--details{
+    margin:20px;
+}
+
+.award-title{
+    font-size:25px;
+    font-weight: 700;
+    margin-bottom:15px;
+}
+
+.award-description{
+    line-height:20px;
+    font-size: 20px;
+    color:#5a6362;
+}
+
+footer{
+    height:50vh;
+    background-color: lightgray;
+    display:flex;
+
+}
+
+.profiles{
+    flex-basis: 60%;  
+    padding-top:20px;
+}
+
+.our-profiles{
+    list-style-type: none;
+    width:50%;
+    display:flex;
+}
+
+.our-profiles a li img{
+    margin:10px;
+}
+
+.our-profiles a li img:hover{
+    filter:drop-shadow(7px 7px 6px #000);
+}
+
+.contact{
+    margin:50px;
+    color:#404244;
+    flex-basis: 40%;
+    margin-left:120px;
+}
+.contact-us{
+    list-style-type: none;
+
+}
+
+.contact-us li{
+    line-height:30px;
+    margin-left:10px;
+}
+
+.contact-us li:first-of-type{
+    margin-top:25px;
+}
+
+.profiles{
+    margin:30px;
+    color:#404244;
+}
