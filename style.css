@@ -233,7 +233,10 @@ footer{
     height:50vh;
     background-color: lightgray;
     display:flex;
+}
 
+.footer-desc{
+    font-size: 18px;
 }
 
 .profiles{
@@ -249,6 +252,8 @@ footer{
 
 .our-profiles a li img{
     margin:10px;
+    margin-top:-10px;
+    width:30px;
 }
 
 .our-profiles a li img:hover{
@@ -268,7 +273,7 @@ footer{
 
 .contact-us li{
     line-height:30px;
-    margin-left:10px;
+
 }
 
 .contact-us li:first-of-type{
